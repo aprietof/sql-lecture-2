@@ -1,0 +1,21 @@
+CREATE TABLE products (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT,
+  price INTEGER
+);
+
+CREATE TABLE costumers (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT
+);
+
+CREATE TABLE carts (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  costumer_id INTEGER
+);
+
+CREATE TABLE line_items (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  cart_id INTEGER,
+  product_id INTEGER
+);
